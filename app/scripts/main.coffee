@@ -16,7 +16,7 @@ getRelease = (id) ->
             $('.js-info').text data.formats[0].name + ', ' + data.year + ', ' + data.genres[0]
             $('.js-link').attr 'href', data.uri
             if data.videos and data.videos.length
-                $('.js-video').html '<iframe width="560" height="315" src="https://www.youtube.com/embed/' + data.videos[0].uri.slice(-11) + '?autoplay=1" frameborder="0" allowfullscreen></iframe>'
+                $('.js-video').html '<iframe width="100%" src="https://www.youtube.com/embed/' + data.videos[0].uri.slice(-11) + '?autoplay=1" frameborder="0" allowfullscreen></iframe>'
             else
                 console.log 'no videos, retrying'
                 newId = getRandomInt(1,999999)
