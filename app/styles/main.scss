@@ -24,3 +24,18 @@ header{
     font-weight: 200;
   }
 }
+
+footer{
+  color: #ccc;
+  font-weight: 100;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 10px;
+  width: auto;
+
+  a{
+    text-decoration: none;
+    color: #ccc;
+  }
+}
