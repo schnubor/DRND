@@ -1,4 +1,5 @@
 $icon-font-path: '../fonts/';
+$red: #EA4134;
 
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
@@ -20,8 +21,23 @@ header{
     letter-spacing: 2px;
     margin-top: 5px;
     margin-bottom: 40px;
-    color: #808080;
+    color: $red;
     font-weight: 200;
+  }
+}
+
+#dInfo{
+  .btn-primary{
+    border-color: $red;
+    background-color: transparent;
+    color: $red; 
+
+    &:hover, &:active, &:focus{
+      border-color: $red;
+      background-color: $red;
+      color: white;
+      outline: 0;
+    }
   }
 }
 
