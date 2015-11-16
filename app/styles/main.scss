@@ -1,61 +1,66 @@
 $icon-font-path: '../fonts/';
-$red: #EA4134;
+$red: #ea4134;
+$grey: #ccc;
+$white: #fff;
 
 // bower:scss
-@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import 'bower_components/bootstrap-sass/assets/stylesheets/bootstrap';
 // endbower
 
-body{
-  font-family: 'Raleway', sans-serif,
+body {
+  font-family: 'Raleway', sans-serif;
 }
 
-header{
-  h1{
+header {
+  h1 {
     font-size: 28px;
     font-weight: bold;
     letter-spacing: 10px;
     margin: 40px 0 0;
   }
-  h2{
+
+  h2 {
+    color: $grey;
     font-size: 16px;
-    letter-spacing: 2px;
-    margin-top: 5px;
-    margin-bottom: 40px;
-    color: #ccc;
     font-weight: 200;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+    margin-top: 5px;
   }
 }
 
-#dInfo{
-  .btn-primary{
-    border-color: $red;
+.dinfo {
+  .btn-primary {
     background-color: transparent;
-    color: $red; 
+    border-color: $red;
+    color: $red;
 
-    &:hover, &:active, &:focus{
-      border-color: $red;
+    &:hover,
+    &:active,
+    &:focus {
       background-color: $red;
-      color: white;
+      border-color: $red;
+      color: $white;
       outline: 0;
     }
   }
 
-  hr{
+  hr {
     margin-top: 0;
   }
 }
 
-footer{
-  color: #ccc;
-  font-weight: 100;
-  position: fixed;
+footer {
   bottom: 0;
-  right: 0;
+  color: $grey;
+  font-weight: 100;
   padding: 10px;
+  position: fixed;
+  right: 0;
   width: auto;
 
-  a{
+  a {
+    color: $grey;
     text-decoration: none;
-    color: #ccc;
   }
 }
