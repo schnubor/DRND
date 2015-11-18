@@ -2,9 +2,11 @@ $icon-font-path: '../fonts/';
 $red: #ea4134;
 $grey: #ccc;
 $white: #fff;
+$twitter: #4099FF;
 
 // bower:scss
 @import 'bower_components/bootstrap-sass/assets/stylesheets/bootstrap';
+@import 'bower_components/font-awesome/scss/font-awesome';
 // endbower
 
 body {
@@ -40,6 +42,22 @@ header {
     &:focus {
       background-color: $red;
       border-color: $red;
+      color: $white;
+      outline: 0;
+    }
+  }
+
+  .btn-info {
+    background-color: transparent;
+    border-color: $twitter;
+    color: $twitter;
+    margin-right: 10px;
+
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: $twitter;
+      border-color: $twitter;
       color: $white;
       outline: 0;
     }
